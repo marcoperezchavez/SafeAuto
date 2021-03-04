@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BEApi", "BEApi\BEApi.csproj", "{DE7C4349-9EF3-4E1B-9BB4-31BB6927BF70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE7C4349-9EF3-4E1B-9BB4-31BB6927BF70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE7C4349-9EF3-4E1B-9BB4-31BB6927BF70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE7C4349-9EF3-4E1B-9BB4-31BB6927BF70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE7C4349-9EF3-4E1B-9BB4-31BB6927BF70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB26B5D4-D89E-4C5C-BF8F-51E256CABAEC}
+	EndGlobalSection
+EndGlobal

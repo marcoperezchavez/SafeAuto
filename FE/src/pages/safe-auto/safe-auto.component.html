@@ -1,0 +1,54 @@
+<br>
+<br>
+<div class="container" *ngIf="showGif == false">
+    <div class="row justify-content-center h-100">
+        <div class="col-sm-12 col-lg-12 col-xs-12 align-self-center text-center">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-body">
+                    <h1 class="m-5">SafeAuto</h1>
+                    <div class="text-center">
+                        Select the file path
+                    </div>
+                    <br>
+                    <div class="row col-sm-offset-4 col-sm-12">
+                        <button type="button" class="btn btn-info col-sm-6 align-self-center col-sm-offset-3"
+                            (click)="searchFile()">
+                            Search
+                        </button>
+                        <input type="file" style="display:none" (change)="fileChanged($event)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="emptyData">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="alert alert-danger" role="alert">
+                Empty data or the format file is invalid
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="errorsAddRowsFile.length > 0">
+    <div *ngFor="let error of errorsAddRowsFile">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="alert alert-danger" role="alert">
+                    The row in the file '{{error}}' is incorrect
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="showGif">
+    <app-pacman-gif></app-pacman-gif>
+</div>
+
+<div>
+    <app-table *ngIf="showTab;e" [headers]="headers" [InformationSafeAutosShow]="InformationSafeAutosShow"></app-table>
+</div>
